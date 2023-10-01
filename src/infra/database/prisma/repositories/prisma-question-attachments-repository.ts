@@ -9,8 +9,6 @@ export class PrismaQuestionAttachmentsRepository implements QuestionAttachmentsR
     constructor(private prisma: PrismaService) {}
 
     async createMany(attachments: QuestionAttachment[]): Promise<void> {
-        console.log(attachments);
-
         if (attachments.length === 0) {
             return;
         }

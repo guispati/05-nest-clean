@@ -14,7 +14,7 @@ export class ChooseQuestionBestAnswerController {
     @HttpCode(204)
     async handle(
         @CurrentUser() user: UserPayload,
-        @Param('id') answerId: string,
+        @Param('answerId') answerId: string,
     ) {
         const userId = user.sub;
 
